@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Simple</title>
+    <style>
+        h1,
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(54, 151, 151);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1ba89c38;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contactos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre Completo</th>
+                <th>Edad</th>
+                <th>Numero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Andres Julian Zabaleta Prieto</td>
+                <td>24</td>
+                <td>3233273631</td>
+            </tr>
+            <tr>
+                <td>Aliz Adriana Prieto Lara</td>
+                <td>55</td>
+                <td>3116425826</td>
+            </tr>
+            <tr>
+                <td>Angelica Castro Rodriguez</td>
+                <td>25</td>
+                <td>3223118107</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

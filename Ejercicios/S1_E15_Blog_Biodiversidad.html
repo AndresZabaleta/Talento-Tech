@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zipaquirá - La Catedral de Sal</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        header {
+            background-color: #2196f3;
+            /* Color azul */
+            color: #fff;
+            /* Texto blanco */
+            padding: 20px;
+            text-align: center;
+            /* Centrar texto en el header */
+            font-family: Arial, sans-serif;
+            /* Estilo de fuente para el header */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #67d7eb;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+            width: 200px;
+        }
+
+        nav ul ul li {
+            display: block;
+        }
+
+        nav ul ul li a {
+            padding: 10px 20px;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        #banner {
+            background-image: url("/sources/banner.jpg");
+            /* Imagen de mejor calidad */
+            background-size: cover;
+            /* Cubrir todo el ancho y alto del contenedor */
+            background-position: center;
+            /* Centrar la imagen */
+            text-align: center;
+            /* Centrar el texto */
+            color: #fff;
+            /* Texto blanco */
+            padding: 200px 0;
+        }
+
+        #banner h2 {
+            font-size: 70px;
+        }
+
+        #banner p {
+            font-size: 38px;
+        }
+
+        #atracciones {
+            display: flex;
+            /* Usar flexbox para distribuir las atracciones */
+            justify-content: space-around;
+            /* Distribuir las atracciones con espacio alrededor */
+            align-items: center;
+            /* Alinear verticalmente las atracciones */
+            padding: 20px;
+            /* Agregar espacio alrededor de las atracciones */
+        }
+
+        .atraccion {
+            text-align: center;
+            /* Centrar el texto */
+            margin: 20px;
+            /* Espacio entre las atracciones */
+            transition: transform 0.3s ease;
+            /* Transición suave al pasar el cursor */
+        }
+
+        .atraccion img {
+            width: 100%;
+            /* Ajustar imagen al ancho del contenedor */
+            border-radius: 10px;
+            /* Bordes redondeados */
+        }
+
+        .atraccion h3 {
+            margin-top: 10px;
+            /* Espacio superior */
+        }
+
+        .atraccion p {
+            margin-bottom: 10px;
+            /* Espacio inferior */
+        }
+
+        .atraccion:hover {
+            transform: scale(1.1);
+            /* Escalar la imagen al pasar el cursor */
+        }
+
+        footer {
+            background-color: #333;
+            /* Color gris oscuro */
+            color: #fff;
+            /* Texto blanco */
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            /* Tamaño de fuente más pequeño */
+            font-style: italic;
+            /* Estilo de fuente cursiva */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zipaquirá</h1>
+        <nav> <!-- Navegación principal -->
+            <ul>
+                <li><a href="#banner">Inicio</a></li>
+                <li>
+                    <a href="#atracciones">Atracciones</a>
+                    <ul>
+                        <li><a href="#atracciones">Catedral de Sal</a></li>
+                        <li><a href="#atracciones">Parque Jaime Principal</a></li>
+                        <li><a href="#atracciones">Museo Zipaquirá</a></li>
+                    </ul>
+                </li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li>
+                    <a href="#informacion">Información</a>
+                    <ul>
+                        <li><a href="#como">Cómo llegar</a></li>
+                        <li><a href="#donde">Dónde hospedarse</a></li>
+                        <li><a href="#que">Qué comer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- Contenido principal -->
+        <section id="banner"> <!-- Banner principal -->
+            <h2>La ciudad de la sal</h2>
+            <p>Zipaquirá, conocida como la "Ciudad de la Sal", es un municipio colombiano ubicado en el departamento de
+                Cundinamarca.</p>
+            <p>Es famosa por su Catedral de Sal, una catedral católica construida dentro de una mina de
+                sal.</p>
+        </section>
+
+        <section id="atracciones"> <!-- Atracciones turísticas -->
+            <div class="atraccion"> <!-- Atracción 1 -->
+                <img src="/sources/catedral-sal.jpg" alt="Foto de la Catedral de Sal">
+                <h3>Catedral de Sal</h3>
+                <p>La Catedral de Sal es una de las atracciones turísticas más importantes de Colombia. Es una catedral
+                    católica construida dentro de una mina de sal, a 180 metros bajo tierra.</p>
+            </div>
+            <div class="atraccion"> <!-- Atracción 2 -->
+                <img src="/sources/parque-principal.jpg" alt="Foto del Parque Principal">
+                <h3>Parque Principal</h3>
+                <p>El Parque Principal del Zipaquirá es el corazón de esta hermosa ciudad colombiana. Conocido como
+                    Parque de la Independencia, es un lugar emblemático donde los habitantes y visitantes se reúnen para
+                    disfrutar de su belleza, hacer actividades recreativas, y simplemente relajarse.</p>
+            </div>
+            <div class="atraccion"> <!-- Atracción 3 -->
+                <img src="/sources/museo-zipaquira.jpg" alt="Foto del Museo Zipaquirá">
+                <h3>Museo Zipaquirá</h3>
+                <p>El Museo Zipaquirá es un museo que alberga una colección de piezas arqueológicas y etnográficas
+                    relacionadas con la historia de Zipaquirá y la región.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"> <!-- Pie de página -->
+        <p>&copy; 2024 Andres Zabaleta🧿</p>
+        <p><a href="https://www.linkedin.com/in/andreszabaleta/" target="_blank" style="color: skyblue;">LinkedIn</a>
+        </p>
+        <p><a href="github.com/andreszabaleta" target="_blank" style="color: skyblue;">GitHub</a>
+        </p>
+    </footer>
+</body>
+
+</html>
