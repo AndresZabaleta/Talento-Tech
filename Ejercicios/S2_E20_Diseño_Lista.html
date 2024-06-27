@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de lista</title>
+    <style>
+        ul {
+            color: rgb(45, 70, 3); /*Color del texto*/
+            background-color: rgb(19, 94, 19); /*Color del fondo*/
+            text-align: center; /*ALinea al centro*/
+            list-style-position: inside; /*la posición de los marcadores */
+            margin: 1rem; /*margen exterior*/
+            padding: 10%; /*Relleno interior*/
+        }
+        ol {
+            color: rgb(0, 63, 16);
+            background-color: rgb(8, 115, 122);
+            list-style-position: inside;
+            text-align:left;
+            margin: 3rem;
+            padding: 10%;
+        }
+        /*La pseudo-clase :nth-child() en CSS se utiliza para seleccionar elementos basados en su posición en el grupo de elementos hermanos. Los valores odd y even son particularmente útiles para alternar estilos entre elementos impares y pares, respectivamente. Esto se utiliza comúnmente para estilizar filas alternas en una tabla o elementos de una lista para mejorar la legibilidad.*/
+        li:nth-child(odd) {
+            background-color: #9dc218;
+        }
+
+        li:nth-child(even) {
+            background-color: #099667;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <ul>
+            <li>Naranjas</li>
+            <li>Limones</li>
+            <li>Mango</li>
+            <li>Sandia</li>
+            <li>Papaya</li>
+        </ul>
+        <br>
+        <ol>
+            <li>Arroz</li>
+            <li>Carne</li>
+            <li>Frijoles</li>
+            <li>Azucar</li>
+            <li>Sal</li>
+        </ol>
+    </main>
+</body>
+</html>

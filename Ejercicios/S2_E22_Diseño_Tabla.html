@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de tabla</title>
+    <style>
+        table {
+            width: 80%; /*Tamaño segun la pantalla*/
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(5, 60, 77);
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        th {
+            color: white;
+            background-color: rgb(10, 124, 158);
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(148, 178, 233);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(187, 225, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andres</td>
+                    <td>Zabaleta</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Adriana</td>
+                    <td>Prieto</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Camilo</td>
+                    <td>Zabaleta</td>
+                    <td>59</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
