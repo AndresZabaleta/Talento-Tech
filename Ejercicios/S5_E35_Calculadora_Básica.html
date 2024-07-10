@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <script>
+        function operacion() {
+            var opcion = Number(prompt('Ingrese la opcion: '))
+            var resultado = document.getElementById('resultado')
+            switch (opcion) {
+                case 1:
+                    resultado.innerHTML = valor_uno + valor_dos;
+                    break;
+                case 2:
+                    resultado.innerHTML = valor_uno - valor_dos;
+                    break;
+                case 3:
+                    resultado.innerHTML = valor_uno * valor_dos;
+                    break;
+                case 4:
+                    resultado.innerHTML = valor_uno / valor_dos;
+                    break;
+                case 5:
+                    resultado.innerHTML = valor_uno % valor_dos;
+                    break;
+                case 6:
+                    document.body.innerHTML = 'Ha salido';
+                    break;
+            }
+        }
+
+        function iniciar() {
+            valor_uno = Number(prompt('Ingrese el primer valor: '));
+            valor_dos = Number(prompt('Ingrese el segundo valor: '));
+
+            document.getElementById('valor_uno').innerHTML = 'Primer Valor: ' + valor_uno
+            document.getElementById('valor_dos').innerHTML = 'Segundo Valor: ' + valor_dos
+        }
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body onload="iniciar()">
+    <h1>Calculadora Básica</h1>
+    <h2>Opciones de la Calculadora</h2>
+    <ul>
+        <li>1. Sumar</li>
+        <li>2. Restar</li>
+        <li>3. Multiplicar</li>
+        <li>4. Dividir</li>
+        <li>5. Modulo</li>
+        <li>6. Salir</li>
+    </ul>
+    <p>La opción realizara la operación matemática seleccionada</p>
+
+    <div id="valor_uno" style="color:dodgerblue; font: size 1.6em;"></div>
+    <div id="valor_dos" style="color:dodgerblue; font: size 1.6em;"></div>
+
+    <form style="margin: auto; text-align:center;">
+        <input type="button" value="Operacion" onclick="operacion()" />
+    </form>
+
+    <div id="resultado" style="color:dodgerblue; font: size 1.6em; margin:auto; text-align:center;">Pulsa para realizar una operación</div>
+
+</body>
+
+</html>

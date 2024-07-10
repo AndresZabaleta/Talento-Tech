@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declaración del tipo de documento y el idioma -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Declaración de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metaetiqueta para el diseño adaptable -->
+    <title>Alerta</title>
+    <!-- Título de la página -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Enlace a la hoja de estilos CSS externa -->
+</head>
+
+<body>
+    <h1>Alerta</h1>
+    <!-- Encabezado principal de la página -->
+
+    <script>
+        // Inicio del script de JavaScript
+
+        var mensaje = 'Hola mundo';
+        // Declaración de una variable global 'mensaje' y asignación de un valor
+
+        function creaMensaje() {
+            var mensaje = 'Hola Mun/do soy Andres';
+            // Declaración de una variable local 'mensaje' dentro de la función 'creaMensaje' y asignación de un valor
+
+            alert('Dentro de la función → ' + mensaje)
+            // Muestra una alerta con el mensaje local de la función
+        }
+
+        creaMensaje();
+        // Llama a la función 'creaMensaje', ejecutando su contenido
+
+        alert('Fuera de la función → ' + mensaje);
+        // Muestra una alerta con el mensaje global 'mensaje'
+    </script>
+    <!-- Fin del script de JavaScript -->
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Declaración del tipo de documento y el idioma -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Declaración de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metaetiqueta para el diseño adaptable -->
+    <title>Palíndromo</title>
+    <!-- Título de la página -->
+    <style>
+        table {
+            margin: auto;
+            width: 300px;
+            text-align: center;
+            border: 1px solid #000000;
+            color: #006c80;
+            box-shadow: 3px 3px 3px #000000
+        }
+        /* Estilo para la tabla: centrada, con ancho fijo, texto centrado, bordes y sombra */
+
+        table tr th {
+            border: 1px solid black;
+        }
+        /* Estilo para los encabezados de las filas de la tabla */
+
+        table tr td {
+            border-bottom: 1px solid #000000;
+        }
+        /* Estilo para las celdas de la tabla */
+    </style>
+    <!-- Sección de estilos -->
+</head>
+
+<body>
+    <h1>Comprobar un Palíndromo</h1>
+    <!-- Encabezado principal de la página -->
+
+    <table cellspacing="0">
+        <!-- Inicio de la tabla con espaciado de celdas de 0 -->
+        <tr>
+            <th>Normal</th>
+            <th>Invertida</th>
+        </tr>
+        <!-- Encabezados de las columnas de la tabla -->
+
+        <script>
+            // Inicio del script de JavaScript
+            var input = prompt('Introduzca la frase')
+            // Solicita al usuario que introduzca una frase y la guarda en la variable 'input'
+
+            var input_limpia = input.toLowerCase().trim().replace(/\s/g, '');
+            // Convierte la frase a minúsculas, elimina espacios en blanco al principio y al final y reemplaza todos los espacios internos con una cadena vacía para limpiar la entrada
+
+            document.write('<br />La frase introducida es → ' + input + '<br /><br />');
+            // Escribe en el documento HTML la frase introducida por el usuario
+
+            document.write('<br />La frase limpia es → ' + input_limpia + '<br /><br />');
+            // Escribe en el documento HTML la frase limpia (sin mayúsculas ni espacios)
+
+            for (i = 0, j = (input_limpia.length - 1); i < input_limpia.length; i++, j--) {
+                // Bucle para recorrer la frase limpia desde el inicio y desde el final simultáneamente
+                document.write('<tr><td>' + input_limpia[i] + '</td>' + '<td>' + input_limpia[j] + '</td></tr>');
+                // Escribe una fila en la tabla con el carácter de la posición 'i' y el carácter de la posición 'j'
+
+                if (input_limpia[i] == input_limpia[j]) {
+                    continue;
+                }
+                // Si los caracteres en las posiciones 'i' y 'j' son iguales, continúa con la siguiente iteración
+                else {
+                    alert('No coincide');
+                    // Si los caracteres no son iguales, muestra una alerta y termina el bucle
+                    break;
+                }
+            }
+        </script>
+        <!-- Fin del script de JavaScript -->
+
+    </table>
+    <!-- Fin de la tabla -->
+</body>
+
+</html>

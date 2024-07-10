@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Diccionario con Switch</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <script>
+        var salir = false
+
+        while (!salir) {
+            var opcion = prompt('Ingrese alguna frase: (casa, mesa, perro, gato) o salir');
+            switch (opcion) {
+                case 'casa':
+                    alert('home');
+                    break;
+                case 'mesa':
+                    alert('table');
+                    break;
+                case 'perro':
+                    alert('dog');
+                    break;
+                case 'gato':
+                    alert('cat');
+                    break;
+                case 'salir':
+                    salir = true;
+                    break
+                default:
+                    alert('Frase incorrecta')
+            }
+        }
+    </script>
+</body>
+
+</html>

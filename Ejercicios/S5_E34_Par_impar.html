@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Impar</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Par o Impar</h1>
+    <script>
+        var numero = Number(prompt('Ingrese un numero: '))
+
+        function par_impar(numero) {
+            if (isNaN(numero)) {
+                alert('No es un valor valido')
+            }
+            else {
+                if (numero % 2 == 0) {
+                    alert('Numero Par')
+                }
+                else {
+                    alert('Numero Impar')
+                }
+            }
+        }
+
+        par_impar(numero)
+    </script>
+</body>
+
+</html>

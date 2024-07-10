@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declaración del tipo de documento y el idioma -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Declaración de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metaetiqueta para el diseño adaptable -->
+    <title>Caracter</title>
+    <!-- Título de la página -->
+</head>
+
+<body>
+    <h1>Carácter a carácter</h1>
+    <!-- Encabezado principal de la página -->
+
+    <div id="resultado" style="color:rgb(0, 14, 75);font-size:1.6em"></div>
+    <!-- Div para mostrar el resultado, con estilos aplicados para color y tamaño de fuente -->
+
+    <script>
+        // Inicio del script de JavaScript
+
+        var frase = prompt('Introduzca una frase: ')
+        // Solicita al usuario que introduzca una frase y la guarda en la variable 'frase'
+
+        var texto = ''
+        // Declara una variable 'texto' vacía que se utilizará para almacenar el resultado
+
+        for (var letra = 0; letra < frase.length; letra++) {
+            // Bucle que itera sobre cada carácter de la frase
+            if (isNaN(frase.charAt(letra))) {
+                // Verifica si el carácter en la posición 'letra' no es un número
+                texto += frase.charAt(letra) + '<br />'
+                // Si el carácter no es un número, lo añade a la variable 'texto' seguido de una etiqueta de salto de línea
+            }
+        }
+
+        document.getElementById('resultado').innerHTML = texto
+        // Establece el contenido HTML del div con id 'resultado' como el valor de 'texto'
+    </script>
+    <!-- Fin del script de JavaScript -->
+</body>
+
+</html>
